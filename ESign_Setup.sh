@@ -24,4 +24,11 @@ apt-install wget -y
 apt-install npm 
 npm install -g node-gyp
 wget -vO- https://planetesteam.co.uk/files/install_esign.sh | bash -
+
+# Add reboot time to crontab
+crontab -l > mycron
+echo "5 8 * * 1-5 reboot"
+crontab mycron
+rm mycron
+
 reboot
