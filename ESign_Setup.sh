@@ -25,6 +25,7 @@ wget -vO- https://planetesteam.co.uk/files/install_esign.sh | bash -
 
 # Add reboot time to crontab
 crontab -l > mycron
+# Cron format is Day, Hour, Day of Month, Month, Day of Week, command
 echo "5 8 * * 1-5 reboot"
 crontab mycron
 rm mycron
