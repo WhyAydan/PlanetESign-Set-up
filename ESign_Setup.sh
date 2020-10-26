@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#This script should set up all of the dependencies needed for the PlanetESign digital signage players on Debian/Raspian
+# This script should set up all of the dependencies needed for the PlanetESign digital signage players on Debian/Raspian
 
 echo "Running as "$(whoami)
 
@@ -13,13 +13,11 @@ fi
 
 
 # Install node.js
-
 apt-install curl -y
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 apt-install nodejs -y
 
 # Install the ESign client
-
 apt-install wget -y
 apt-install npm 
 npm install -g node-gyp
@@ -31,4 +29,11 @@ echo "5 8 * * 1-5 reboot"
 crontab mycron
 rm mycron
 
+# 'Disable' Chromium updates
+touch /etc/chromium-browser/customizations/01-disable-update-check
+echo CHROMIUM_FLAGS=\"\$\{CHROMIUM_FLAGS\} --check-for-update-interval=31536000\" > /etc/chromium-browser/customizations/01-disable-update-check
+
+
+
+# Reboot to start esign
 reboot
