@@ -13,11 +13,13 @@ fi
 
 
 # Install node.js
+echo "Installing node.js and it's requirements"
 apt install curl -y
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 apt install nodejs -y
 
 # Install the ESign client
+echo "Installing ESign client and it's requirements"
 apt install wget -y
 apt install npm 
 apt install chromium-browser
@@ -26,6 +28,7 @@ npm install -g node-gyp
 wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -
 
 # Add reboot time to crontab
+echo "Adding Reboot Cronjob"
 crontab -l > mycron
 # Cron format is Day, Hour, Day of Month, Month, Day of Week, command
 echo "5 8 * * 1-5 reboot"
