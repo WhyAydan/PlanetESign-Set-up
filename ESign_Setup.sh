@@ -13,15 +13,16 @@ fi
 
 
 # Install node.js
-apt-install curl -y
+apt install curl -y
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
-apt-install nodejs -y
+apt install nodejs -y
 
 # Install the ESign client
-apt-install wget -y
-apt-install npm 
+apt install wget -y
+apt install npm 
+apt install chromium-browser
 npm install -g node-gyp
-wget -vO- https://planetesteam.co.uk/files/install_esign.sh | bash -
+wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -
 
 # Add reboot time to crontab
 crontab -l > mycron
