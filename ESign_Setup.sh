@@ -21,6 +21,7 @@ apt install nodejs -y
 apt install wget -y
 apt install npm 
 apt install chromium-browser
+apt install openjdk-8-jre
 npm install -g node-gyp
 wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -
 
