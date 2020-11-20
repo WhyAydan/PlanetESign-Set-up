@@ -27,7 +27,7 @@ apt install chromium-browser
 apt install openjdk-8-jre
 npm install -g node-gyp
 cd ~/
-wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -
+su -c "wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -" esign
 
 # Add reboot time to crontab
 echo "Adding Reboot Cronjob"
@@ -44,4 +44,4 @@ echo CHROMIUM_FLAGS=\"\$\{CHROMIUM_FLAGS\} --check-for-update-interval=31536000\
 
 
 # Reboot to start esign
-reboot
+#reboot
