@@ -22,9 +22,11 @@ apt install nodejs -y
 echo "Installing ESign client and it's requirements"
 apt install wget -y
 apt install npm 
+apt remove firefox
 apt install chromium-browser
 apt install openjdk-8-jre
 npm install -g node-gyp
+cd ~/
 wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -
 
 # Add reboot time to crontab
