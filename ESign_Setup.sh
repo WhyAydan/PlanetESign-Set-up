@@ -27,7 +27,7 @@ apt install chromium-browser
 apt install openjdk-8-jre
 npm install -g node-gyp
 cd ~/
-su -c "wget -vO- https://planetestream.co.uk/files/install_esign.sh | bash -" esign
+su -c "wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash -" esign
 
 # Add reboot time to crontab
 echo "Adding Reboot Cronjob"
