@@ -13,7 +13,10 @@ then
 
 fi
 
-esignDeps = "wget npm chromium-browser openjdk-8-jre"
+#Install OpenSSH
+echo "Installing OpenSSH"
+apt install openssh-server
+wait
 
 #Remove Firefox and replace with Chromium
 echo "Replacing browser with Chromium"
@@ -24,7 +27,7 @@ wait
 
 # Install node.js
 echo "Installing node.js and it's requirements"
-apt install curl -y
+apt install curl wget -y
 wait
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 wait
@@ -33,7 +36,7 @@ wait
 
 # Install the ESign client
 echo "Installing ESign client and it's requirements"
-apt install wget npm openjdk-8-jre -y
+apt install npm openjdk-8-jre -y
 wait
 npm install -g node-gyp
 wait
