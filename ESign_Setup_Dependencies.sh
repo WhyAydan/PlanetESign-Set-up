@@ -13,32 +13,40 @@ then
 
 fi
 
-nodeDeps = "curl"
 esignDeps = "wget npm chromium-browser openjdk-8-jre"
+
+#Remove Firefox and replace with Chromium
+echo "Replacing browser with Chromium"
+apt remove Firefox
+wait
+apt install chromium-browser
+wait
 
 # Install node.js
 echo "Installing node.js and it's requirements"
-apt install $nodeDeps -y
+apt install curl -y
 wait
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 wait
 apt install nodejs -y
+wait
 
 # Install the ESign client
 echo "Installing ESign client and it's requirements"
-apt install $esignDeps -y
+apt install wget npm openjdk-8-jre -y
 wait
 npm install -g node-gyp
 wait
 cd ~/
 
 # Add reboot time to crontab
-echo "Adding Reboot Cronjob"
-crontab -l > mycron
+#echo "Adding Reboot Cronjob"
+#crontab -l > mycron
 # Cron format is Day, Hour, Day of Month, Month, Day of Week, command
-echo "5 8 * * 1-5 reboot"
-crontab mycron
-rm mycron
+#echo "5 8 * * 1-5 reboot"
+#crontab mycron
+#rm mycron
+wait
 
 # 'Disable' Chromium updates
 touch /etc/chromium-browser/customizations/01-disable-update-check
