@@ -40,7 +40,7 @@ apt install npm openjdk-8-jre -y
 wait
 npm install -g node-gyp
 wait
-cd ~/
+#cd ~/
 
 # Add reboot time to crontab
 #echo "Adding Reboot Cronjob"
@@ -49,7 +49,7 @@ cd ~/
 #echo "5 8 * * 1-5 reboot"
 #crontab mycron
 #rm mycron
-wait
+#wait
 
 # 'Disable' Chromium updates
 touch /etc/chromium-browser/customizations/01-disable-update-check
