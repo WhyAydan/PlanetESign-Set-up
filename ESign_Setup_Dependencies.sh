@@ -13,6 +13,8 @@ then
 
 fi
 
+cd ..
+
 #Install OpenSSH
 echo "Installing OpenSSH Server"
 apt install openssh-server
