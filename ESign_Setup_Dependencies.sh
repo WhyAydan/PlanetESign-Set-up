@@ -20,7 +20,7 @@ wait
 
 #Remove Firefox and replace with Chromium
 echo "Replacing Firefox with Chromium"
-apt remove firefox
+apt remove firefox -y
 wait
 apt install chromium-browser
 wait
