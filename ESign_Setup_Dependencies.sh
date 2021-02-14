@@ -47,16 +47,8 @@ wait
 touch /etc/chromium-browser/customizations/01-disable-update-check
 echo CHROMIUM_FLAGS=\"\$\{CHROMIUM_FLAGS\} --check-for-update-interval=31536000\" > /etc/chromium-browser/customizations/01-disable-update-check
 
-
-
-echo 'The Planet eSign Client has now been installed'
-echo 'You can run the client manually by running: ./run.sh'
-echo 'Or by rebooting the device'
-echo 'Please note it is recommended to reboot the device if kernel updates were applied'
-echo ''
-
 # Reboot to start esign
 #reboot
 
-#echo -e "\e[1;31m **** Please run the following command to install the ESign client! **** \e[0m"
-#echo -e "\e[1;31m **** wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash - **** \e[0m
+echo -e "\e[1;31m **** Please run the following command to install the ESign client! Make sure you are not running as root **** \e[0m"
+echo -e "\e[1;31m **** wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash - **** \e[0m
