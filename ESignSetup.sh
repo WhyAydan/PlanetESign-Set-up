@@ -2,7 +2,7 @@
 
 # This script should set up all of the dependencies needed for the PlanetESign digital signage players on Ubunutu
 
-#Written by KMA and Aydan Abrahams
+#Written by Kyle and Aydan
 
 echo "Running as "$(whoami)
 
