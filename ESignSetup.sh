@@ -48,5 +48,13 @@ echo CHROMIUM_FLAGS=\"\$\{CHROMIUM_FLAGS\} --check-for-update-interval=31536000\
 # Reboot to start esign
 #reboot
 
-#echo -e "\e[1;31m **** Please run the following command to install the ESign client! Make sure you are not running as root **** \e[0m"
-#echo -e "\e[1;31m **** wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash - **** \e[0m
+echo -e "\e[1;31m **** Please run the following command to install the ESign client if the auto install fails! **** \e[0m"
+echo -e "\e[1;31m wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash - \e[0m"
+echo "Continuing in 5 seconds"
+
+sleep 5
+
+wget -qO- https://planetestream.co.uk/files/install_esign.sh
+wait
+su esign
+sh ./install_esign.sh
