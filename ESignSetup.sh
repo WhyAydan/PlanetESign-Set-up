@@ -61,10 +61,10 @@ echo "Continuing in 5 seconds"
 sleep 5
 
 # This bit doesn't quite work properly :P
-#wget -qO- https://planetestream.co.uk/files/install_esign.sh
-#wait
-#su esign
-#sh ./install_esign.sh
+wget -qO- https://planetestream.co.uk/files/install_esign.sh > install_esign.sh
+wait
+sudo -u esign sh ./install_esign.sh
+
 
 echo "Do you wish to restart?"
 select yn in "Yes" "No"; do
