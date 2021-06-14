@@ -105,7 +105,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@email](aabrahams@cmatrust.net) - email
+Aydan Abrahams - [@email](mailto:aabrahams@cmatrust.net)
 
 Project Link: [https://github.com/WhyAydan/PlanetESign-Set-up](https://github.com/WhyAydan/PlanetESign-Set-up)
 
