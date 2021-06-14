@@ -105,7 +105,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Aydan Abrahams - [@email](mailto:aabrahams@cmatrust.net)
+Aydan Abrahams - [@email](mailto:aabrahams@cmatrust.net?subject=[GitHub]%20HELP%20ME%20ESignLinux)
+Kyle Marchant - [@email](mailto:kylepaul7@hotmail.co.uk?subject=[GitHub]%20HELP%20ME%20ESignLinux)
 
 Project Link: [https://github.com/WhyAydan/PlanetESign-Set-up](https://github.com/WhyAydan/PlanetESign-Set-up)
 
