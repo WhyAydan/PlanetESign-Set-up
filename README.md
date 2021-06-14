@@ -29,7 +29,7 @@
     <a href="https://github.com/WhyAydan/PlanetESign-Set-up"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/WhyAydan/PlanetESign-Set-up">View Demo</a>
+    <a href="https://github.com/WhyAydan/PlanetESign-Set-up/wiki">Wiki</a>
     ·
     <a href="https://github.com/WhyAydan/PlanetESign-Set-up/issues">Report Bug</a>
     ·
