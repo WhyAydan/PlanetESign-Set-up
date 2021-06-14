@@ -31,9 +31,9 @@
     <br />
     <a href="https://github.com/WhyAydan/PlanetESign-Set-up">View Demo</a>
     ·
-    <a href="https://github.com/WhyAydan/PlanetESign-Set-up">Report Bug</a>
+    <a href="https://github.com/WhyAydan/PlanetESign-Set-up/issues">Report Bug</a>
     ·
-    <a href="https://github.com/WhyAydan/PlanetESign-Set-up">Request Feature</a>
+    <a href="https://github.com/WhyAydan/PlanetESign-Set-up/issues">Request Feature</a>
   </p>
 </p>
 
