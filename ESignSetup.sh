@@ -57,6 +57,7 @@ dpkg -i CMATSupportMe.ClientSetup.deb
 wait
 
 # This bit *may* not work properly :P
+echo "Now Auto Installing eSign Client.....Hopefully"
 wget -qO- https://planetestream.co.uk/files/install_esign.sh > install_esign.sh
 wait
 sudo -u esign sh ./install_esign.sh
