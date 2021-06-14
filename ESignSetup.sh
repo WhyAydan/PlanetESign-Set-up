@@ -54,17 +54,20 @@ echo "Installing CMAT SupportMe"
 chmod +x CMATSupportMe.ClientSetup.deb
 dpkg -i CMATSupportMe.ClientSetup.deb
 
+wait
+
+# This bit *may* not work properly :P
+wget -qO- https://planetestream.co.uk/files/install_esign.sh > install_esign.sh
+wait
+sudo -u esign sh ./install_esign.sh
+
+wait
+
 echo -e "\e[1;31m **** Please run the following command to install the ESign client if the auto install fails! **** \e[0m"
 echo -e "\e[1;31m wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash - \e[0m"
 echo "Continuing in 5 seconds"
 
 sleep 5
-
-# This bit doesn't quite work properly :P
-wget -qO- https://planetestream.co.uk/files/install_esign.sh > install_esign.sh
-wait
-sudo -u esign sh ./install_esign.sh
-
 
 echo "Do you wish to restart?"
 select yn in "Yes" "No"; do
