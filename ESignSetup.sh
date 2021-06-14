@@ -58,3 +58,11 @@ wget -qO- https://planetestream.co.uk/files/install_esign.sh
 wait
 su esign
 sh ./install_esign.sh
+
+echo "Do you wish to restart?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) reboot;;
+        No ) exit;;
+    esac
+done
