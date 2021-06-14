@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This script should set up all of the dependencies needed for the PlanetESign digital signage players on Ubunutu
+# This script should set up all of the dependencies and install PlanetESign along with SupportMe
 
 #Written by Kyle and Aydan
 
@@ -42,11 +42,17 @@ npm install -g node-gyp
 wait
 
 # 'Disable' Chromium updates
+echo "Disbaling Chromium auto updates - if this fails then its no biggy"
 touch /etc/chromium-browser/customizations/01-disable-update-check
 echo CHROMIUM_FLAGS=\"\$\{CHROMIUM_FLAGS\} --check-for-update-interval=31536000\" > /etc/chromium-browser/customizations/01-disable-update-check
 
 # Reboot to start esign
 #reboot
+
+#Install SupportMe
+echo "Installing CMAT SupportMe"
+chmod +x CMATSupportMe.ClientSetup.deb
+dpkg -i CMATSupportMe.ClientSetup.deb
 
 echo -e "\e[1;31m **** Please run the following command to install the ESign client if the auto install fails! **** \e[0m"
 echo -e "\e[1;31m wget -qO- https://planetestream.co.uk/files/install_esign.sh | bash - \e[0m"
