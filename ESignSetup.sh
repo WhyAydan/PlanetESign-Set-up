@@ -29,7 +29,7 @@ wait
 echo "Installing node.js and it's requirements"
 apt install curl wget -y
 wait
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 wait
 apt install nodejs -y
 wait
